@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-lg%1ph0yce$a4e+s+520(p86f$u2ms5!if!e1d6!#4o4vz&naj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["https://api.artiebears.com", "http://127.0.0.1"]
 
 
 # Application definition
@@ -56,10 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'recipes_backend.urls'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # или ваш адрес фронтенда
-    "http://localhost:5174",  # или ваш адрес фронтенда
-    "http://localhost:5175",  # или ваш адрес фронтенда
-    "http://127.0.0.1:3000",
+    "https://artiebears.com",  # или ваш адрес фронтенда
 ]
 
 TEMPLATES = [
