@@ -11,5 +11,6 @@ COPY ../.. .
 
 EXPOSE 8000
 
+CMD ["python", "manage.py", "makemigtrations"]
+CMD ["python", "manage.py", "migrate"]
 CMD ["gunicorn", "recipes_backend.wsgi:application", "--bind", "0.0.0.0:8000"]
-#CMD ["python", "manage.py", "runserver"]
