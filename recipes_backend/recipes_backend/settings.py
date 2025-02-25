@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lg%1ph0yce$a4e+s+520(p86f$u2ms5!if!e1d6!#4o4vz&naj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["api.artiebears.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["api.artiebears.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
